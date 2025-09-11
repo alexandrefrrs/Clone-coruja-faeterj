@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periquito</title>
+    
+    <style type="text/css">
+       
+       
+        body {background-color: rgb(197, 255, 110);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;}
+        form {
+            background-color: transparent;
+            text-align: left;}
+        select{border: 0cap;
+            background-color: white;
+            border-radius: 04%;}
+        label { display: block;
+            margin: 8px 2 5px 0;
+            font-size: 18px;
+            color: #2b2b2b;}
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 22px;
+            border: none;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            box-sizing: border-box;}
+         input[type="submit"] {
+            color: white;
+            text-transform: uppercase; 
+            font-weight: bold;
+            cursor: pointer;}
+        
+    </style>
+</head>
+
+    <body>
+        
+        <img src="Imagens/periquito.png" width="120">
+
+            <form> 
+            
+                <label>Nome de acesso: </label>
+                <input type="email" name="login" required>
+            
+                <label>Senha: </label>
+                <input type="password" name="Senha" required>
+                
+                <label>Perfil: </label>
+                <select> 
+                    <option> Aluno </option>
+                    <option> Professor </option>
+                    <option> Administrador </option>
+                </select>
+
+                <input style="background-color: rgb(32, 189, 39); color: white;"  type="submit" value="Entrar">
+
+            </form>
+
+                <script>
+        function enviar() {
+            let login = document.getElementById("login");
+            let senha = document.getElementById("senha");
+
+            if(login.value.trim()==""){
+            alert("O nome é obrigatório"); 
+            
+            return false;
+            }
+
+            if(senha.value.trim()==""){
+            alert("A senha é obrigatório"); 
+            
+            return false;
+            }
+        }
+    </script>
+    </body>
+
+</html>
