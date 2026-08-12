@@ -5,56 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Periquito</title>
-    
-    <style type="text/css">
-       
-       
-        body {background-color: rgb(197, 255, 110);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 50vh;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;}
-        form {
-            background-color: transparent;
-            text-align: left;}
-        select{border: 0cap;
-            background-color: white;
-            border-radius: 04%;}
-        label { display: block;
-            margin: 8px 2 5px 0;
-            font-size: 18px;
-            color: #2b2b2b;}
-        input, select {
-            width: 100%;
-            padding: 10px;
-            font-size: 22px;
-            border: none;
-            border-radius: 6px;
-            margin-bottom: 12px;
-            box-sizing: border-box;}
-         input[type="submit"] {
-            color: white;
-            text-transform: uppercase; 
-            font-weight: bold;
-            cursor: pointer;}
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
     <body>
-        
-        <img src="Imagens/periquito.png" width="120">
 
-            <form onsubmit="return enviar()"> 
+            <div class="container-login">
+                
+                <img src="Imagens/periquito_img1.png" class="logo-login" alt="">
             
-                <label>Nome de acesso: </label>
-                <input type="email" name="login" id="login" required>
+                <form id="dados-login"> 
             
-                <label>Senha: </label>
-                <input type="password" name="Senha" id="Senha" required>
+                <label for="login">Nome de acesso: </label>
+                <input type="text" class="campo-amarelo" name="login" id="login" required>
+            
+                <label for="senha">Senha: </label>
+                <input type="password" class="campo-amarelo" name="Senha" id="Senha" required>
                 
                 <label>Perfil: </label>
                 <select> 
@@ -63,33 +30,10 @@
                     <option> Administrador </option>
                 </select>
 
-                <input style="background-color: rgb(32, 189, 39); color: white;"  type="submit" value="Entrar">
+                <input class="btn-entrar" type="submit" value="Entrar">
 
             </form>
-
-                <script>
-                      
-                     function enviar() {
-        
-                        let login = document.getElementById("login");
-                        let senha = document.getElementById("Senha");
-
-                            if(login.value.trim()==""){
-                            alert("O nome é obrigatório"); 
-            
-                            return false;
-                            }
-
-                            if(senha.value.trim()==""){
-                            alert("A senha é obrigatório"); 
-            
-                            return false;
-                            }   
-                
-                            alert("Login válido!");
-                            return true;
-                            }
-                </script>
+            </div>
     </body>
 
 </html>

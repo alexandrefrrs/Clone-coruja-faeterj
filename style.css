@@ -1,0 +1,62 @@
+        body {
+            background-color: rgb(197, 255, 110);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            
+
+        form {
+            background-color: transparent;
+            text-align: left;}
+
+        select{
+            border: none;
+            background-color: white;
+            border-radius: 4px;}
+
+        label { 
+            display: block;
+            margin: 8px 2px 5px 0;
+            font-size: 18px;
+            color: #2b2b2b;}
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 22px;
+            border: none;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            }
+
+        .btn-entrar {
+            background-color: rgb(32, 189, 39);
+            color: white;
+            text-transform: uppercase; 
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .campo-amarelo:focus {
+            background-color: #fff9c4;
+            outline: none;
+        }
+
+        .campo-amarelo.preenchido {
+            background-color: #fff9c4;
+        }   
+
+        .container-login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 75vh;
+            margin: 0;
+
+        }
+
+        .logo-login {
+            width: 120px;
+
+        }
