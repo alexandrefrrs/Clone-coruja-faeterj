@@ -3,6 +3,7 @@ const campos = document.querySelectorAll('.campo-amarelo'); // Efeito amarelado 
 const formulario = document.getElementById('dados-login');
 const login = document.getElementById('login');
 const senha = document.getElementById('senha');
+const spanErro = document.getElementById('mensagem-erro-campo');
     
         campos.forEach(campo => {
                        
@@ -22,13 +23,13 @@ const senha = document.getElementById('senha');
     eventoCapturado.preventDefault(); 
       
         if(login.value.trim()==""){
-        console.log("O nome é obrigatório"); 
+        spanErro.textContent = "Este campo é obrigatório."; 
             
         return;
         }
 
         if(senha.value.trim()==""){
-        console.log("A senha é obrigatório"); 
+        spanErro.textContent = "Este campo é obrigatório."; 
             
         return;
         }   
