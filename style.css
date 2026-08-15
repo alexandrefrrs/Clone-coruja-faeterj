@@ -1,11 +1,16 @@
-    /* Estilizacao da pagina de login*/
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+   
+   /* Estilizacao da pagina de login*/
         
         .login-body {
             background-color: rgb(197, 255, 110);
             font-family: Arial, Helvetica, sans-serif;
         }
             
-
         .login-form {
             background-color: transparent;
             text-align: left;}
@@ -75,4 +80,42 @@
             margin: auto;
             font-size: 12px;
             display: block;
+        }
+
+        /* Estilizacao da pagina inicial logada*/
+
+        .inicio-body{
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .inicio-header{
+            background-color: rgb(197, 255, 110);
+            display: flex; 
+            justify-content: flex-start; 
+            align-items: center; 
+            padding: 15px 30px;
+            position: relative;
+            
+        }
+
+        .inicio-logo2 {
+            width: 100px;
+
+        }
+
+        .inicio-brasao {
+            width: 120px;
+        }
+
+        .texto-header{
+
+            color: white;
+            font-family: sans-serif;
+            font-size: 80px;
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%);
+            
         }
