@@ -22,7 +22,10 @@ const spanErroSenha = document.getElementById('erro-senha');
     
     formulario.addEventListener('submit', function(eventoCapturado) {
     eventoCapturado.preventDefault(); 
-      
+
+    spanErroLogin.textContent = "";
+    spanErroSenha.textContent = "";
+       
         if(login.value.trim()==""){
         spanErroLogin.textContent = "Este campo é obrigatório."; 
             
@@ -37,4 +40,4 @@ const spanErroSenha = document.getElementById('erro-senha');
                 
         console.log("Login válido!");
         return;
-    });
+    });   
