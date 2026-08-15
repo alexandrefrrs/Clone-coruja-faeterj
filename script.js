@@ -1,4 +1,3 @@
-const campo = document.querySelectorAll('.campo-amarelo'); // Efeito amarelado quando campo esta preenchido 
 const campos = document.querySelectorAll('.campo-amarelo'); // Efeito amarelado quando campo esta preenchido 
 const formulario = document.getElementById('dados-login');
 const login = document.getElementById('login');
@@ -20,6 +19,14 @@ const spanErroSenha = document.getElementById('erro-senha');
         });
         });
     
+    login.addEventListener('input', function(eventoCapturado) {
+    spanErroLogin.textContent = "";
+    });
+
+    senha.addEventListener('input', function(eventoCapturado) {
+    spanErroSenha.textContent = "";
+    });
+
     formulario.addEventListener('submit', function(eventoCapturado) {
     eventoCapturado.preventDefault(); 
 
