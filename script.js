@@ -3,7 +3,8 @@ const campos = document.querySelectorAll('.campo-amarelo'); // Efeito amarelado 
 const formulario = document.getElementById('dados-login');
 const login = document.getElementById('login');
 const senha = document.getElementById('senha');
-const spanErro = document.getElementById('mensagem-erro-campo');
+const spanErroLogin = document.getElementById('erro-login');
+const spanErroSenha = document.getElementById('erro-senha');
     
         campos.forEach(campo => {
                        
@@ -23,13 +24,13 @@ const spanErro = document.getElementById('mensagem-erro-campo');
     eventoCapturado.preventDefault(); 
       
         if(login.value.trim()==""){
-        spanErro.textContent = "Este campo é obrigatório."; 
+        spanErroLogin.textContent = "Este campo é obrigatório."; 
             
         return;
         }
 
         if(senha.value.trim()==""){
-        spanErro.textContent = "Este campo é obrigatório."; 
+        spanErroSenha.textContent = "Este campo é obrigatório."; 
             
         return;
         }   

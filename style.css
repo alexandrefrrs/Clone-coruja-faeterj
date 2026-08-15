@@ -19,7 +19,7 @@
             display: block;
             margin: 8px 2px 5px 0;
             font-size: 18px;
-            color: #2b2b2b;}
+            color: #636161;}
 
         .login-input, .login-select {
             width: 100%;
@@ -65,8 +65,8 @@
 
         }
 
-        .logo-login {
-            width: 120px;
+        .login-logo {
+            width: 140px;
 
         }
         
