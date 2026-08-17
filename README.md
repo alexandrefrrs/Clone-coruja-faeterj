@@ -15,9 +15,6 @@ eficiente. O projeto busca oferecer uma alternativa a sistemas acadêmicos que, 
 excesso de complexidade e dificuldades de navegação. A proposta é reunir as principais funcionalidades acadêmicas em uma plataforma organizada, acessível e 
 visualmente consistente, facilitando o uso por alunos, professores e administradores.
 
-
-
-
 ## Funcionalidades
 
 
