@@ -1,4 +1,10 @@
-## Sistema acadêmico - PSITA
+<p align="center">
+  <img src="assets/logos/logo.png" alt="Logo do PSITA" width="180">
+</p>
+
+## PSITA
+
+Sistema acadêmico para instituições de ensino superior.
 
 ## Sobre o projeto
 
