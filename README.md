@@ -2,7 +2,7 @@
   <img src="assets/logos/banner-readme.png" alt="PSITA" width="100%">
 </p>
 
-## PSITA
+## PSITA (EM DESENVOLVIMENTO)
 
 Sistema acadêmico para instituições de ensino superior.
 
