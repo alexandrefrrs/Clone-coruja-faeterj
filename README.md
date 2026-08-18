@@ -6,8 +6,6 @@ Este projeto consiste no desenvolvimento de uma plataforma acadêmica voltada à
 superior. O sistema contempla diferentes perfis de usuário e reúne recursos relacionados à rotina acadêmica, administrativa e institucional em um único 
 ambiente, com estrutura pensada para permitir expansão e adaptação conforme as necessidades de cada instituição.
 
-Fortemente inspirado no sistema já existente 'coruja'.
-
 ## Objetivo
 
 Desenvolver um sistema acadêmico completo, moderno e adaptável para instituições de ensino superior, priorizando uma experiência de uso intuitiva, clara e 
