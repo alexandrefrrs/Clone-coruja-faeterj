@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logos/logo.png" alt="Logo do PSITA" width="180">
+  <img src="assets/logos/banner-readme.png" alt="PSITA" width="100%">
 </p>
 
 ## PSITA
