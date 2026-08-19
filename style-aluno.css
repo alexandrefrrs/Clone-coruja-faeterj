@@ -11,7 +11,12 @@
    }
 
    .checkbox-menu:checked ~ .sidebar {
-      width: 320px; 
+      width: 240px; 
+   }
+
+   .checkbox-menu:checked ~ .sidebar .logo-sidebar {
+      width: 130px; 
+      opacity: 1; 
    }
 
 /* Barra lateral */
@@ -21,7 +26,7 @@
       background-color: rgb(197, 255, 110);
       top: 0;
       left: 0;
-      width: 80px; /* Largura inicial (fechada) */
+      width: 80px; 
       height: 100vh;
       overflow-x: hidden; 
       transition: width 0.3s ease; 
@@ -31,14 +36,27 @@
 /* Cabecalho da barra lateral*/
    .topo-sidebar {
       display: flex;
+      align-items: center;
       justify-content: flex-end; 
       padding: 20px 25px; 
+      position: relative;
    }
+
+   .logo-sidebar {
+    width: 0; 
+    position: absolute;
+    left: 40%;
+    margin-top: 5%;
+    transform: translateX(-50%);
+    opacity: 0; 
+    transition: all 0.3s ease; 
+}
 
    .botao-menu {
       font-size: 30px;
       color: #333;
       cursor: pointer; 
+      margin-top: 15%;
    }
 
 /* Navegacao da barra lateral*/
@@ -60,6 +78,6 @@
 
 /* Main */
    .conteudo-principal { 
-      padding: 20px 20px 20px 100px; /* O '100px' empurra o conteúdo para não ficar embaixo da barra de 80px */
+      padding: 20px 20px 20px 100px; 
       font-family: Arial, Helvetica, sans-serif;
    }
