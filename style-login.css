@@ -1,78 +1,89 @@
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+   }
    
-   /* Estilizacao da pagina de login*/
-        
-        .login-body {
-            background-color: rgb(197, 255, 110);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-            
-        .login-form {
-            background-color: transparent;
-            text-align: left;}
+/* Estrutura principal */
 
-        .login-select{
-            background-color: white;
-        }
+   .login-body {
+      background-color: rgb(197, 255, 110);
+      font-family: Arial, Helvetica, sans-serif;
+   }
 
-        .login-label { 
-            display: block;
-            margin: 8px 2px 5px 0;
-            font-size: 18px;
-            color: #636161;}
+   .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 75vh;
+   }
 
-        .login-input, .login-select {
-            width: 100%;
-            padding: 10px;
-            font-size: 22px;
-            border: none;
-            border-radius: 6px;
-            margin-bottom: 12px;
-            }
+/* Logotipo */
 
-        .btn-entrar {
-            background-color: rgb(32, 189, 39);
-            color: white;
-            text-transform: uppercase; 
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            padding: 10px;
-            font-size: 22px;
-            border: none;
-            border-radius: 6px;
-            margin-bottom: 12px;
-        }
+   .login-logo {
+      width: 140px;
+   }
 
-        .campo-amarelo:focus {
-            background-color: #fff9c4;
-            outline: none;
-        }
+/* Formulario principal */
 
-        .campo-amarelo.preenchido {
-            background-color: #fff9c4;
-        }   
+   .login-form {
+      background-color: transparent;
+      text-align: left;
+   }
 
-        .login-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 75vh;
-        }
+   .login-label { 
+      display: block;
+      margin: 8px 2px 5px 0;
+      font-size: 18px;
+      color: #636161;
+   }
 
-        .login-logo {
-            width: 140px;
+   .login-input, .login-select {
+      width: 100%;
+      padding: 10px;
+      font-size: 22px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 12px;
+   }
 
-        }
-        
-        .login-span{
-            color: red;
-            margin: auto;
-            font-size: 12px;
-            display: block;
-        }
+   .login-select {
+      background-color: white;
+   }
+
+/* Efeitos de interacao (JavaScript) */
+
+   .campo-amarelo:focus {
+      background-color: #fff9c4;
+      outline: none;
+   }
+
+   .campo-amarelo.preenchido {
+      background-color: #fff9c4;
+   }   
+
+/* Mensagens de erro */
+
+   .login-span {
+      color: red;
+      margin: auto;
+      font-size: 12px;
+      display: block;
+   }
+
+/* Botao de envio */
+
+   .btn-entrar {
+      background-color: rgb(32, 189, 39);
+      color: white;
+      text-transform: uppercase; 
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      padding: 10px;
+      font-size: 22px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 12px;
+   }

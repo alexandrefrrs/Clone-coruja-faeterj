@@ -2,6 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-}
+   }
    
-   /* Estilizacao da versao aluno*/
+/* Botao sidebar */
+
+   .checkbox-menu {
+      display: none;
+   }
+
+   .checkbox-menu:checked ~ .sidebar {
+      width: 320px; 
+   }
+
+/* Barra lateral */
+
+   .sidebar {
+      position: fixed;
+      background-color: rgb(197, 255, 110);
+      top: 0;
+      left: 0;
+      width: 80px; /* Largura inicial (fechada) */
+      height: 100vh;
+      overflow-x: hidden; 
+      transition: width 0.3s ease; 
+      z-index: 99;
+}
+
+/* Cabecalho da barra lateral*/
+   .topo-sidebar {
+      display: flex;
+      justify-content: flex-end; 
+      padding: 20px 25px; 
+   }
+
+   .botao-menu {
+      font-size: 30px;
+      color: #333;
+      cursor: pointer; 
+   }
+
+/* Navegacao da barra lateral*/
+   .menu-lateral {
+      display: flex;
+      flex-direction: column; 
+}
+
+   .menu-lateral a {
+      display: flex;
+      align-items: center; 
+      color: #333;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 15px 25px;
+      font-weight: bold;
+      white-space: nowrap; 
+   }
+
+/* Main */
+   .conteudo-principal { 
+      padding: 20px 20px 20px 100px; /* O '100px' empurra o conteúdo para não ficar embaixo da barra de 80px */
+      font-family: Arial, Helvetica, sans-serif;
+   }
