@@ -38,7 +38,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end; 
-      padding: 20px 25px; 
+      padding: 30px 25px; 
       position: relative;
    }
 
@@ -54,7 +54,7 @@
 
    .botao-menu {
       font-size: 30px;
-      color: #333;
+      color: rgb(23, 36, 53);
       cursor: pointer; 
       margin-top: 15%;
    }
@@ -68,13 +68,36 @@
    .menu-lateral a {
       display: flex;
       align-items: center; 
-      color: #333;
+      color: rgb(23, 36, 53);
       text-decoration: none;
       font-size: 20px;
-      padding: 15px 25px;
+      padding: 25px 25px;
       font-weight: bold;
       white-space: nowrap; 
    }
+
+ 
+   .icone {
+      font-size: 24px;
+      min-width: 30px; 
+      text-align: center;
+   }
+
+   .texto {
+      margin-left: 15px;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+   }
+
+   .flag{
+
+      color: rgb(32, 189, 39);
+   }
+
+   .checkbox-menu:checked ~ .sidebar .texto {
+      opacity: 1; 
+      transition-delay: 0.1s; 
+   }  
 
 /* Main */
    .conteudo-principal { 
