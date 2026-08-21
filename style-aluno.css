@@ -4,21 +4,6 @@
     box-sizing: border-box; 
    }
    
-/* Botao sidebar */
-
-   .checkbox-menu {
-      display: none;
-   }
-
-   .checkbox-menu:checked ~ .sidebar {
-      width: 240px; 
-   }
-
-   .checkbox-menu:checked ~ .sidebar .logo-sidebar {
-      width: 130px; 
-      opacity: 1; 
-   }
-
 /* Barra lateral */
 
    .sidebar {
@@ -31,7 +16,21 @@
       overflow-x: hidden; 
       transition: width 0.3s ease; 
       z-index: 99;
-}
+   }
+
+   .sidebar.expandida {
+      width: 240px; 
+   }
+
+   .sidebar.expandida .logo-sidebar {
+      width: 130px; 
+      opacity: 1; 
+   }
+
+   .sidebar.expandida .texto {
+      opacity: 1; 
+      transition-delay: 0.1s; 
+   }
 
 /* Cabecalho da barra lateral*/
    .topo-sidebar {
@@ -93,11 +92,6 @@
 
       color: rgb(32, 189, 39);
    }
-
-   .checkbox-menu:checked ~ .sidebar .texto {
-      opacity: 1; 
-      transition-delay: 0.1s; 
-   }  
 
 /* Main */
    .conteudo-principal { 
