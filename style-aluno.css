@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box; 
    }
+
+   body{
+      background-color: #F6F8F4;
+
+   }
    
 /* Barra lateral */
 
@@ -97,4 +102,9 @@
    .conteudo-principal { 
       padding: 20px 20px 20px 100px; 
       font-family: Arial, Helvetica, sans-serif;
+      transition: padding-left 0.3s ease;
+   }
+
+   .sidebar.expandida ~ .conteudo-principal {
+      padding-left: 260px; 
    }
