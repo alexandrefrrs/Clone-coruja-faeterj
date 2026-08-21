@@ -6,6 +6,7 @@
 
    body{
       background-color: #F6F8F4;
+      font-family: 'Times New Roman', Times, serif;
 
    }
    
@@ -101,10 +102,20 @@
 /* Main */
    .conteudo-principal { 
       padding: 20px 20px 20px 100px; 
-      font-family: Arial, Helvetica, sans-serif;
       transition: padding-left 0.3s ease;
    }
 
    .sidebar.expandida ~ .conteudo-principal {
       padding-left: 260px; 
+   }
+
+   .container-cabecalho{
+      border-bottom: 2px solid #D1D5DB; 
+      padding-bottom: 10px; 
+      margin-bottom: 30px; 
+   }
+
+   .texto-main{
+      color: rgb(23, 36, 53);
+
    }
